@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Chat Simulation</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="chat-container">
-        <h1>WhatsApp Chat Simulation</h1>
-        
-        <!-- Chat window to display messages -->
-        <div class="chat-box" id="chatBox"></div>
-
-        <!-- Message input field and buttons -->
-        <div class="input-area">
-            <textarea id="messageInput" placeholder="Type a message..."></textarea>
-            <button id="sendBtn">Send</button>
-            <button id="undoBtn">Unsend</button>
-            <button id="resendBtn" style="display:none;">Resend</button>
+        <div class="sidebar">
+            <div class="chat-header card"> <!-- Card for the Chats header -->
+                <h2>Chats</h2> <!-- Chats headline -->
+            </div>
+            <ul id="users-list">
+                <!-- User list will be populated here -->
+            </ul>
+        </div>
+        <div class="chat-area">
+            <div id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="Type a message">
+                <button id="sendBtn" onclick="sendMessage()">Send</button>
+                <button id="undoBtn" disabled>Undo</button>
+                <button id="resendBtn" disabled>Resend</button>
+            </div>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
+
