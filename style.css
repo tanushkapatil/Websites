@@ -1,0 +1,93 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    padding: 20px;
+}
+
+/* Main container */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #075E54;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Chat box style */
+.chat-box {
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for individual chat messages */
+.message {
+    background-color: #dcf8c6;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.message.sent {
+    background-color: #34b7f1;
+    color: white;
+    margin-left: auto;
+}
+
+/* Input area styling */
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #f0f0f0;
+}
+
+textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #075E54;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+
+/* Style for Resend button */
+button#resendBtn {
+    background-color: #ffc107;
+}
+
+button#resendBtn:hover {
+    background-color: #ffca2c;
+}
